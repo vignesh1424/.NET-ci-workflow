@@ -10,7 +10,10 @@ runs:
         dotnet-version: '3.1.x'
     - name: Install dependencies
       run: dotnet restore
+      shell: bash
     - name: Build
       run: dotnet build
+      shell: bash
     - name: Test with the dotnet CLI
       run: dotnet test
+      shell: bash
