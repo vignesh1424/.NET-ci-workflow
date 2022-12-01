@@ -19,6 +19,7 @@ runs:
       shell: bash
     - name: Copy Coverage To Predictable Location
       run: cp coverage/*/coverage.cobertura.xml coverage/coverage.cobertura.xml
+      shell: bash
     - name: ReportGenerator
       uses: danielpalme/ReportGenerator-GitHub-Action@5.1.4
       with:
