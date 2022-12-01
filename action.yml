@@ -17,3 +17,5 @@ runs:
     - name: Test with the dotnet CLI
       run: dotnet test
       shell: bash
+    - name: code coverage
+      uses: codecov/codecov-action@v1.5.2
