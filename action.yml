@@ -30,7 +30,7 @@ runs:
     - name: Code Coverage Summary Report
       uses: irongut/CodeCoverageSummary@v1.0.2
       with:
-        filename: coveragereport/index/coverage.cobertura.xml # double check path with targetdir parameter above
+        filename: coverage/index/coverage.cobertura.xml # double check path with targetdir parameter above
         badge: true
         format: 'markdown'
         output: 'both'
