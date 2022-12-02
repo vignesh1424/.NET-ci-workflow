@@ -15,16 +15,8 @@ runs:
       run: dotnet build
       shell: bash
     - name: Test with the dotnet CLI
-      run: dotnet test "trx;LogFileName=test-results.trx" || true
+      run: dotnet test
       shell: bash
-    - name: Test Report
-      uses: dorny/test-reporter@v1
-      if: always()
-      with:
-        name: DotNET Tests
-        path: "**/test-results.trx"                            
-        reporter: dotnet-trx
-        fail-on-error: true
     - name: Code Coverage Summary Report
       uses: irongut/CodeCoverageSummary@v1.0.2
       with:
