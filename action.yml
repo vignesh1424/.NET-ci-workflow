@@ -15,7 +15,7 @@ runs:
       run: dotnet build
       shell: bash
     - name: Test with the dotnet CLI
-      run: dotnet test --collect:"XPlat Code Coverage" --results-directory ./coverage
+      run: dotnet test
       shell: bash
     - name: Code Coverage Summary Report
       uses: irongut/CodeCoverageSummary@v1.0.2
