@@ -17,10 +17,3 @@ runs:
     - name: Test with the dotnet CLI
       run: dotnet test
       shell: bash
-    - name: Code Coverage Summary Report
-      uses: irongut/CodeCoverageSummary@v1.0.2
-      with:
-        filename: coverage/index/coverage.cobertura.xml # double check path with targetdir parameter above
-        badge: true
-        format: 'markdown'
-        output: 'both'
